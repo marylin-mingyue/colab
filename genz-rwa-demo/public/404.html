@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <script>
+      // SPA fallback for GitHub Pages.
+      // This repo is served at: https://marylin-mingyue.github.io/colab/genz-rwa-demo/
+      // If you rename the repo/path, update this BASE.
+      var BASE = '/colab/genz-rwa-demo/'
+      sessionStorage.setItem('spa_redirect', location.pathname + location.search + location.hash)
+      location.replace(BASE)
+    </script>
+  </head>
+  <body></body>
+</html>
+

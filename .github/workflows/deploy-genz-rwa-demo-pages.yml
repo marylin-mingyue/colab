@@ -1,0 +1,52 @@
+name: Deploy genz-rwa-demo to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "genz-rwa-demo/**"
+      - ".github/workflows/deploy-genz-rwa-demo-pages.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "pages-genz-rwa-demo"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: genz-rwa-demo/package-lock.json
+
+      - name: Install
+        working-directory: genz-rwa-demo
+        run: npm ci
+
+      - name: Build (GitHub Pages base path)
+        working-directory: genz-rwa-demo
+        env:
+          VITE_BASE: /colab/genz-rwa-demo/
+          VITE_APP_MODE: demo
+          VITE_THEME: ideathon
+        run: npm run build
+
+      - name: Deploy to gh-pages/genz-rwa-demo
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: genz-rwa-demo/dist
+          destination_dir: genz-rwa-demo
+          keep_files: true
+
