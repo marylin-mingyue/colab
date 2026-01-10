@@ -26,7 +26,7 @@ export function Invest() {
 
   if (!computed.eligibleForRealInvest) {
     return (
-      <Card title="Module 3 — Real Invest (locked)" subtitle="Unlock condition: 3 badges + positive simulator PnL">
+      <Card title="Invest (locked)" subtitle="Unlock condition: 3 badges + positive simulator PnL">
         <div style={{ fontSize: 13, color: 'var(--muted)' }}>
           Current status: <b style={{ color: 'var(--text)' }}>{computed.badgesCount}/3 badges</b> · Simulator PnL:{' '}
           <b style={{ color: computed.simPnLPct >= 0 ? 'var(--ok)' : 'var(--danger)' }}>{computed.simPnLPct.toFixed(2)}%</b>
@@ -53,7 +53,7 @@ export function Invest() {
         <div className="panel-strong" style={{ padding: 18 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
             <div>
-              <h2 style={{ margin: 0, fontSize: 26 }}>Module 3 — Real, small investment (demo)</h2>
+              <h2 style={{ margin: 0, fontSize: 26 }}>Invest</h2>
               <div style={{ marginTop: 8, color: 'var(--muted)', fontSize: 13 }}>
                 You invest using a sponsor-funded e-HKD voucher concept. This demo only simulates the flow.
               </div>

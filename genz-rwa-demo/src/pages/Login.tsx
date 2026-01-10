@@ -51,7 +51,7 @@ export function Login() {
     <div className="grid" style={{ gridTemplateColumns: 'repeat(12, 1fr)', gap: 16 }}>
       <div style={{ gridColumn: 'span 7' }}>
         <div className="panel-strong" style={{ padding: 20 }}>
-          <h2 style={{ margin: 0, fontSize: 24 }}>Log in (demo)</h2>
+          <h2 style={{ margin: 0, fontSize: 24 }}>Log in</h2>
           <div style={{ marginTop: 8, color: 'var(--muted)', fontSize: 13 }}>
             We use a concept of account abstraction: users don’t need seed phrases. In a real product, we can integrate iAM Smart /
             biometrics + compliance.

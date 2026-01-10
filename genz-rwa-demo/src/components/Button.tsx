@@ -18,7 +18,7 @@ export function Button({ variant = 'primary', size = 'md', style, ...rest }: Pro
 
   const variants: Record<string, React.CSSProperties> = {
     primary: {
-      background: 'linear-gradient(135deg, rgba(110,231,255,0.35), rgba(167,139,250,0.25))',
+      background: 'linear-gradient(135deg, color-mix(in srgb, var(--brand) 32%, transparent), color-mix(in srgb, var(--brand2) 26%, transparent))',
     },
     ghost: {
       background: 'transparent',

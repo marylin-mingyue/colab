@@ -44,7 +44,7 @@ export function Simulator() {
 
   if (!computed.eligibleForSimulator) {
     return (
-      <Card title="Module 2 — Simulator (locked)" subtitle="Earn at least 1 NFT learning badge to unlock simulation">
+      <Card title="Simulator (locked)" subtitle="Earn at least 1 learning badge to unlock simulation">
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
           <Button onClick={() => nav('/learning')}>Go to Learning</Button>
           <Button variant="ghost" onClick={() => nav('/dashboard')}>
@@ -66,7 +66,7 @@ export function Simulator() {
         <div className="panel-strong" style={{ padding: 18 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
             <div>
-              <h2 style={{ margin: 0, fontSize: 26 }}>Module 2 — Simulated trading (risk-free)</h2>
+              <h2 style={{ margin: 0, fontSize: 26 }}>Simulator</h2>
               <div style={{ marginTop: 8, color: 'var(--muted)', fontSize: 13 }}>
                 Virtual tokenized RWA baskets with a simple market simulation engine (demo).
               </div>
@@ -214,7 +214,7 @@ export function Simulator() {
       </div>
 
       <div style={{ gridColumn: 'span 4' }}>
-        <Card title="Leaderboard (mock)" subtitle="Top performers earn an e-HKD voucher">
+        <Card title="Leaderboard" subtitle="Top performers earn an e-HKD voucher">
           <div className="grid" style={{ gap: 10 }}>
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12 }}>

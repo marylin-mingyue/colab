@@ -1,6 +1,7 @@
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useAppState } from '../state/AppState'
 import { Button } from './Button'
+import { APP_NAME, APP_TAGLINE } from '../config/app'
 
 function NavItem({ to, label }: { to: string; label: string }) {
   return (
@@ -33,7 +34,7 @@ export function TopNav() {
         top: 0,
         zIndex: 20,
         borderBottom: '1px solid var(--border)',
-        background: 'rgba(11, 16, 32, 0.65)',
+        background: 'var(--nav-bg)',
         backdropFilter: 'blur(10px)',
       }}
     >
@@ -51,8 +52,8 @@ export function TopNav() {
                 }}
               />
               <div>
-                <div style={{ fontWeight: 800, letterSpacing: 0.2 }}>DART Learn</div>
-                <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: -2 }}>GenZ RWA + ESG demo</div>
+                <div style={{ fontWeight: 800, letterSpacing: 0.2 }}>{APP_NAME}</div>
+                <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: -2 }}>{APP_TAGLINE}</div>
               </div>
             </div>
           </NavLink>
@@ -84,7 +85,7 @@ export function TopNav() {
                   nav('/dashboard')
                 }}
               >
-                Reset progress
+                Reset
               </Button>
               <Button
                 variant="danger"
@@ -104,7 +105,7 @@ export function TopNav() {
                 nav('/login')
               }}
             >
-              Log in (demo)
+              Log in
             </Button>
           )}
         </div>

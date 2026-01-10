@@ -21,7 +21,7 @@ export function Learning() {
         <div className="panel-strong" style={{ padding: 18 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, alignItems: 'flex-start', flexWrap: 'wrap' }}>
             <div>
-              <h2 style={{ margin: 0, fontSize: 26 }}>Module 1 — Learning</h2>
+              <h2 style={{ margin: 0, fontSize: 26 }}>Learning</h2>
               <div style={{ marginTop: 8, color: 'var(--muted)', fontSize: 13 }}>
                 Bite-sized, scenario-based challenges. Complete a level to mint an NFT learning badge.
               </div>

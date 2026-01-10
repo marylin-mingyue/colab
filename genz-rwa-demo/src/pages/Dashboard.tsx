@@ -51,7 +51,7 @@ export function Dashboard() {
               {state.badges.length ? (
                 state.badges.map((b) => <BadgePill key={b.level} level={b.level} tokenId={b.tokenId} />)
               ) : (
-                <div style={{ fontSize: 13, color: 'var(--muted)' }}>No badges yet. Start Module 1 to mint your first badge.</div>
+                <div style={{ fontSize: 13, color: 'var(--muted)' }}>No badges yet. Start learning to earn your first badge.</div>
               )}
             </div>
           </Card>

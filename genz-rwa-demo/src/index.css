@@ -1,4 +1,5 @@
 :root {
+  /* Default theme (backward-compatible): dark neon */
   --bg: #0b1020;
   --panel: rgba(255, 255, 255, 0.06);
   --panel2: rgba(255, 255, 255, 0.1);
@@ -9,6 +10,7 @@
   --brand2: #a78bfa;
   --danger: #fb7185;
   --ok: #34d399;
+  --nav-bg: rgba(11, 16, 32, 0.65);
 
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
     "Segoe UI Emoji";
@@ -23,6 +25,25 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* “Ideathon-style” palette (blue-purple, lighter UI like the event site) */
+:root[data-theme='ideathon'] {
+  --bg: #f7f9ff;
+  --panel: rgba(255, 255, 255, 0.75);
+  --panel2: rgba(255, 255, 255, 0.92);
+  --text: rgba(13, 18, 32, 0.92);
+  --muted: rgba(13, 18, 32, 0.64);
+  --border: rgba(13, 18, 32, 0.10);
+  --brand: #2f6bff;
+  --brand2: #7c3aed;
+  --danger: #e11d48;
+  --ok: #16a34a;
+  --nav-bg: rgba(247, 249, 255, 0.72);
+
+  background: radial-gradient(900px 520px at 15% -5%, rgba(47, 107, 255, 0.18), transparent 60%),
+    radial-gradient(820px 520px at 85% 0%, rgba(124, 58, 237, 0.16), transparent 55%),
+    radial-gradient(900px 700px at 40% 120%, rgba(16, 185, 129, 0.10), transparent 60%), var(--bg);
 }
 
 * {
@@ -42,7 +63,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: rgba(110, 231, 255, 0.65);
+  text-decoration-color: rgba(47, 107, 255, 0.55);
 }
 
 button,

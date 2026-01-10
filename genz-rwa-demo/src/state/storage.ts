@@ -1,4 +1,4 @@
-export const STORAGE_KEY = 'genz-rwa-demo:v1'
+import { STORAGE_KEY } from '../config/app'
 
 export function loadFromStorage<T>(): T | null {
   try {

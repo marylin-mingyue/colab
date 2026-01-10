@@ -48,7 +48,7 @@ export function LearningLevel() {
         <div className="panel-strong" style={{ padding: 18 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
             <div>
-              <div style={{ fontSize: 12, color: 'var(--muted)' }}>Module 1</div>
+              <div style={{ fontSize: 12, color: 'var(--muted)' }}>Learning</div>
               <h2 style={{ margin: '6px 0 0', fontSize: 24 }}>{content.title}</h2>
               <div style={{ marginTop: 10 }}>
                 {alreadyEarned ? (
