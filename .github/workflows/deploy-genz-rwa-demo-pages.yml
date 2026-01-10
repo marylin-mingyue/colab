@@ -36,17 +36,16 @@ jobs:
       - name: Build (GitHub Pages base path)
         working-directory: genz-rwa-demo
         env:
-          VITE_BASE: /colab/genz-rwa-demo/
+          VITE_BASE: /colab/
           VITE_APP_MODE: demo
           VITE_THEME: ideathon
         run: npm run build
 
-      - name: Deploy to gh-pages/genz-rwa-demo
+      - name: Deploy to gh-pages root
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: genz-rwa-demo/dist
-          destination_dir: genz-rwa-demo
-          keep_files: true
+          keep_files: false
 
