@@ -1,6 +1,6 @@
-# DART Learn — GenZ RWA + ESG (Frontend Demo)
+# FinVerse — GenZ RWA + ESG
 
-An **English-only** product demo showcasing a progressive journey:
+An **English-only** product preview showcasing a progressive journey:
 
 - **Module 1 — Learning**: Duolingo-like scenarios → earn **NFT learning badges (mock)**
 - **Module 2 — Simulator**: virtual tokenized RWA portfolio → **PnL + drawdown** (mock market engine)
@@ -9,14 +9,13 @@ An **English-only** product demo showcasing a progressive journey:
 ## Run locally
 
 ```bash
-cd genz-rwa-demo
 npm install
 npm run dev
 ```
 
 Then open the local URL shown in the terminal (Vite dev server).
 
-## Demo flow (on stage)
+## Flow (on stage)
 
 1. **Log in (mock)** via iAM Smart / FaceID concept
 2. Go to **Learning** and mint 1–3 badges
@@ -26,7 +25,7 @@ Then open the local URL shown in the terminal (Vite dev server).
 
 ## Notes
 
-- This is **demo-only**: no real KYC/AML, no real chain transactions.
+- This is a **prototype**: no real KYC/AML, no real chain transactions.
 - State persists in **localStorage** so the flow survives refresh.
 
 # React + TypeScript + Vite

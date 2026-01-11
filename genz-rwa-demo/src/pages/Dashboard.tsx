@@ -76,7 +76,7 @@ export function Dashboard() {
 
       <div className="grid" style={{ gridTemplateColumns: 'repeat(12, 1fr)', gap: 16 }}>
         <div style={{ gridColumn: 'span 8' }}>
-          <Card title="Simulator overview" subtitle="Your virtual tokenized RWA portfolio (demo)">
+          <Card title="Simulator overview" subtitle="Your virtual tokenized RWA portfolio">
             <div style={{ display: 'flex', gap: 16, alignItems: 'center', flexWrap: 'wrap' }}>
               <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
                 <div style={{ fontSize: 12, color: 'var(--muted)' }}>Value</div>

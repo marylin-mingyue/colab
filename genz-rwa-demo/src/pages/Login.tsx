@@ -92,7 +92,7 @@ export function Login() {
           </div>
 
           <div className="panel" style={{ padding: 12, borderRadius: 14, marginTop: 14 }}>
-            <div style={{ fontSize: 12, fontWeight: 800 }}>What happens in this demo?</div>
+            <div style={{ fontSize: 12, fontWeight: 800 }}>What happens in this flow?</div>
             <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>{helper}</div>
           </div>
 

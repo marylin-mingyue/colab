@@ -63,7 +63,7 @@ export function Learning() {
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
               <div style={{ fontWeight: 850, fontSize: 12 }}>Badge = on-chain proof</div>
               <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
-                Badges are verifiable credentials (NFTs). Here we mock minting for demo.
+                Badges are verifiable credentials (NFTs). Here we mock minting for now.
               </div>
             </div>
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>

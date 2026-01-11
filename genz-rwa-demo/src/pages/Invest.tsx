@@ -55,7 +55,7 @@ export function Invest() {
             <div>
               <h2 style={{ margin: 0, fontSize: 26 }}>Invest</h2>
               <div style={{ marginTop: 8, color: 'var(--muted)', fontSize: 13 }}>
-                You invest using a sponsor-funded e-HKD voucher concept. This demo only simulates the flow.
+                You invest using a sponsor-funded e-HKD voucher concept. This experience simulates the flow.
               </div>
             </div>
             <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -74,7 +74,7 @@ export function Invest() {
               <div style={{ fontSize: 22, fontWeight: 950 }}>{state.voucher.ehkdVoucherBalance.toFixed(0)} e-HKD</div>
             </div>
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
-              <div style={{ fontSize: 12, color: 'var(--muted)' }}>Total invested (demo)</div>
+              <div style={{ fontSize: 12, color: 'var(--muted)' }}>Total invested</div>
               <div style={{ fontSize: 22, fontWeight: 950 }}>{state.invest.investedTotal.toFixed(0)} e-HKD</div>
             </div>
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
@@ -149,7 +149,7 @@ export function Invest() {
               <div>
                 <div style={{ fontWeight: 950, fontSize: 14 }}>Spend voucher</div>
                 <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 4 }}>
-                  This will decrease your e-HKD balance and record a demo “investment”.
+                  This will decrease your e-HKD balance and record a simulated “investment”.
                 </div>
               </div>
               <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
@@ -176,7 +176,7 @@ export function Invest() {
                     dispatch({ type: 'INVEST_WITH_VOUCHER', amount })
                   }}
                 >
-                  Invest now (demo)
+                  Invest now
                 </Button>
               </div>
             </div>

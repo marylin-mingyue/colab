@@ -68,7 +68,7 @@ export function Simulator() {
             <div>
               <h2 style={{ margin: 0, fontSize: 26 }}>Simulator</h2>
               <div style={{ marginTop: 8, color: 'var(--muted)', fontSize: 13 }}>
-                Virtual tokenized RWA baskets with a simple market simulation engine (demo).
+                Virtual tokenized RWA baskets with a simple market simulation engine.
               </div>
             </div>
             <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -138,7 +138,7 @@ export function Simulator() {
             <div>
               <div style={{ fontWeight: 950, fontSize: 16 }}>Allocate your virtual portfolio</div>
               <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
-                Adjust weights. Higher risk unlock is enforced by learning badges in a real product (demo keeps it open).
+                Adjust weights. Higher risk unlock is enforced by learning badges in a real product (kept open here).
               </div>
             </div>
             <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -229,7 +229,7 @@ export function Simulator() {
             </div>
 
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
-              <div style={{ fontWeight: 900, fontSize: 13 }}>Reward rule (demo)</div>
+              <div style={{ fontWeight: 900, fontSize: 13 }}>Reward rule</div>
               <div style={{ fontSize: 12, color: 'var(--muted)', marginTop: 6 }}>
                 If you have 2+ badges and positive PnL, you can claim <b style={{ color: 'var(--text)' }}>50 e-HKD</b> once every 30
                 seconds.

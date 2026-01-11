@@ -69,7 +69,7 @@ export function LearningLevel() {
                 }}
                 variant="ghost"
               >
-                Quick demo: update dashboard
+                Quick action: update dashboard
               </Button>
             </div>
           </div>
@@ -155,7 +155,7 @@ export function LearningLevel() {
       </div>
 
       <div style={{ gridColumn: 'span 4' }}>
-        <Card title="Unlock status" subtitle="Progressive access control (demo rules)">
+        <Card title="Unlock status" subtitle="Progressive access control rules">
           <div className="grid">
             <div className="panel" style={{ padding: 12, borderRadius: 14 }}>
               <div style={{ fontWeight: 850, fontSize: 12 }}>Badges</div>

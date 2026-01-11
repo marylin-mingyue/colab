@@ -20,7 +20,7 @@ function coachMessage(pathname: string, badges: number, pnlPct: number) {
   if (pathname.startsWith('/invest')) {
     return {
       title: 'AI Coach: Real money, small steps',
-      body: `This demo uses an e-HKD voucher concept: spend only what you can afford to lock for a while. Start with low-risk tokenized bonds.`,
+      body: `This uses an e-HKD voucher concept: spend only what you can afford to lock for a while. Start with low-risk tokenized bonds.`,
     }
   }
   if (pathname.startsWith('/dashboard')) {

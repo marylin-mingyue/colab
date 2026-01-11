@@ -8,7 +8,7 @@ export function randomId(prefix: string) {
 }
 
 export function pseudoWalletAddress(seed: string) {
-  // Deterministic-ish demo address from a seed string (not real crypto).
+  // Deterministic-ish address from a seed string (not real crypto).
   let x = 2166136261
   for (let i = 0; i < seed.length; i++) {
     x ^= seed.charCodeAt(i)

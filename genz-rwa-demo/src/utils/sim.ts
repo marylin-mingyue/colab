@@ -32,7 +32,7 @@ export function stepSimulation(sim: SimulatorState, userSeed: string): Simulator
   const seed = seedFromString(`${userSeed}:${sim.history.length}`)
   const rng = mulberry32(seed)
 
-  // Daily-ish step (demo): weighted return from asset APR + noise from volatility.
+  // Daily-ish step: weighted return from asset APR + noise from volatility.
   const dt = 1 / 365
   let expectedReturn = 0
   let vol = 0

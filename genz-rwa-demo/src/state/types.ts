@@ -35,7 +35,7 @@ export type User = {
 export type Badge = {
   level: BadgeLevel
   earnedAt: number
-  tokenId: string // demo NFT token id
+  tokenId: string // NFT token id (mock)
 }
 
 export type SimulatorState = {

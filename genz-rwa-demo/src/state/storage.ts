@@ -14,7 +14,7 @@ export function saveToStorage<T>(value: T) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(value))
   } catch {
-    // ignore quota / privacy mode issues in demo
+    // ignore quota / privacy mode issues
   }
 }
 

@@ -21,7 +21,7 @@ type Action =
 
 function ensureUser(state: AppState): User {
   if (!state.user) {
-    // For convenience in demo mode, allow anonymous user.
+    // For convenience, allow anonymous user.
     const id = randomId('user')
     return {
       id,
